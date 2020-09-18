@@ -5,8 +5,7 @@
     @media (min-width: 768px) {      
         display: flex;
         justify-content: space-between;
-        margin: 22px 15px;
-      
+        margin: 22px 15px;      
     }
 
     &__container-title{
@@ -108,7 +107,7 @@
     
     @media (min-width: 480px) {
         width: 255px;
-        margin: 0 15px;
+        margin: 15px;
         margin-top: 0;
     }  
 
