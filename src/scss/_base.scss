@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.grid-area-1{
+    grid-area: header;
+}
+.grid-area-2{
+    grid-area: dashboard;
+}
+.grid-area-3{
+    grid-area: overview;
+}
+
+body{
+    margin: 0 auto;
+    width: 90%;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;   
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "dashboard"
+    "overview";
+    background-color: var(--bg);
+
+    &::before{
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 240PX;
+        width: 100%;
+        border-radius: 20px;
+        background-color: var(--topBgPatter);
+        z-index: -1;
+    }
+    
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+}  

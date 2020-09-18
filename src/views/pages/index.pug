@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="css/styles.css")
+        title Frontend Mentor | Social media dashboard with theme switcher
+    body
+        header.grid-area-1.header
+            div.header__container-title
+                h1.header__title Social Media Dashboard
+                p.header__paragraph Total Followers: 23,004
+            div.switcher
+                p.switcher__paragraph Dark Mode
+                div
+                    input#switcher.switcher__checkbox(type="checkbox", name="switcher")
+                    label#switcher-label.switcher__label(for="switcher")       
+        div.grid-area-2
+            .card--facebook
+                div.card__container-nick
+                    img.card__social-network(src="images/icon-facebook.svg", alt="icon facebook")
+                    p.card__nick @nathanf
+                p.card__number-followers 1987
+                p.card__followers Followers
+                div.card__container-new-followers
+                    img.card__icon-increase(src="images/icon-up.svg", alt="increase")
+                    p.card__new-followers.increase 12 Today
+            
+            .card--twitter
+                div.card__container-nick
+                    img.card__social-network(src="images/icon-twitter.svg", alt="icon twitter")
+                    p.card__nick @nathanf
+                p.card__number-followers 1044
+                p.card__followers Followers
+                div.card__container-new-followers
+                    img.card__icon-increase(src="images/icon-up.svg", alt="increase")
+                    p.card__new-followers.increase 99 Today
+
+            .card--instagram
+                div.card__container-nick
+                    img.card__social-network(src="images/icon-instagram.svg", alt="instagram")
+                    p.card__nick @realnathanf
+                p.card__number-followers 11k
+                p.card__followers Followers
+                div.card__container-new-followers
+                    img.card__icon-increase(src="images/icon-up.svg", alt="increase")
+                    p.card__new-followers.increase 1099 Today
+
+            .card--youtube
+                div.card__container-nick
+                    img.card__social-network(src="images/icon-youtube.svg", alt="icon youtube")
+                    p.card__nick Nathan F.
+                p.card__number-followers 8239
+                p.card__followers Subscribers
+                div.card__container-new-followers
+                    img.card__icon-increase(src="images/icon-down.svg", alt="decrease")
+                    p.card__new-followers.decrease 144 Today
+        div.grid-area-3
+            section.overview
+                h2#overview-title.overview__title Overview - Today
+                div.overview__container
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Page Views
+                            p.overview-card__viewers 87
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-facebook.svg", alt="icon facebook")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-up.svg", alt="increase")
+                                p.overview-card__increase.increase 3%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Likes
+                            p.overview-card__viewers 52
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-facebook.svg", alt="icon facebook")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-down.svg", alt="decrease")
+                                p.overview-card__increase.decrease 2%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Likes
+                            p.overview-card__viewers 5462
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-instagram.svg", alt="icon instagram")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-up.svg", alt="increase")
+                                p.overview-card__increase.increase 2257%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Profile Views
+                            p.overview-card__viewers 52k
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-instagram.svg", alt="icon instagram")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-up.svg", alt="increase")
+                                p.overview-card__increase.increase 1375%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Retweets
+                            p.overview-card__viewers 117
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-twitter.svg", alt="icon twitter")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-up.svg", alt="increase")
+                                p.overview-card__increase.increase 303%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Likes
+                            p.overview-card__viewers 507
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-twitter.svg", alt="icon twitter")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-up.svg", alt="increase")
+                                p.overview-card__increase.increase 553%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Likes
+                            p.overview-card__viewers 107
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-youtube.svg", alt="icon youtube")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-down.svg", alt="decrease")
+                                p.overview-card__increase.decrease 19%
+                    .overview-card
+                        div.overview-card__container-viewers
+                            p.overview-card__title Total Views
+                            p.overview-card__viewers 1407
+                        div.overview-card__container-social-networks
+                            img.overview-card__social-network(src="images/icon-youtube.svg", alt="icon youtube")
+                            div.overview-card__container-increase
+                                img.overview-card__icon-increase(src="images/icon-down.svg", alt="decrease")
+                                p.overview-card__increase.decrease 12%                                                                                                             
+        script(src="js/script.js")
+
+
