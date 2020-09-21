@@ -1,24 +1,25 @@
-.header{    
-    margin-top: 25px;
-    color: var(--textColor1);    
+.header{  
+    margin-top: 40px;
+    color: var(--textColor1);
+    max-width: 1440px;   
 
     @media (min-width: 768px) {      
-        display: flex;
+        display: flex;        
         justify-content: space-between;
-        margin: 22px 15px;      
+        margin: 18px 15px;      
     }
 
     &__container-title{
         border-bottom: 1px solid var(--textColor1);
 
         @media (min-width: 768px) {
-           border-bottom: none;           
+           border-bottom: none;             
         }
     }
  
     &__title{
         font-size: 24px;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
         color: var(--textColor2);
 
         @media (min-width: 768px) {
@@ -29,7 +30,7 @@
     &__paragraph{
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 20px;       
+        margin-bottom: 25px;       
     }
 }
 .switcher{
@@ -40,6 +41,7 @@
 
     @media (min-width: 768px) {
         justify-content: flex-end;
+        margin-top: -20px;
     }
 
     &__paragraph{
@@ -80,12 +82,13 @@
         }
     }
 }
-.grid-area-2 {
+
+.first-cards {    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; 
-    max-width: 1440px;   
+    max-width: 1440px;    
 }
 
 .card{   
@@ -99,7 +102,7 @@
     border-radius: 6px;
     background-color: var(--cardBg);
     color: var(--textColor1);
-    position: relative;    
+    position: relative;  
    
     &:hover{
         background-color: var(--hover)
@@ -191,12 +194,12 @@
     max-width: 1440px;    
 
     @media (min-width: 768px) {
-        margin-top: 45px;     
+        margin-top: 32px;     
     }
 
     &__title{
         font-size: 24px;         
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         color: var(--textColor3);
 
         @media (min-width: 768px) {
@@ -247,6 +250,7 @@
         font-size: 30px;
         margin: 0;
     }
+
     &__container-social-networks{
         display: flex;
         flex-direction: column;
